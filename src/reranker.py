@@ -1,7 +1,7 @@
 from llama_index.core.postprocessor import SentenceTransformerRerank
 from llama_index.postprocessor.flag_embedding_reranker import  FlagEmbeddingReranker
 
-def get_cross_encoder_reranker(top_n=6):
+def get_cross_encoder_reranker(top_n=5):
 
     return SentenceTransformerRerank(
         model="cross-encoder/ms-marco-MiniLM-L-6-v2",
